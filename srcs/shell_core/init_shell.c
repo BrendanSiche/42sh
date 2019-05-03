@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_shell.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abguimba <abguimba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/17 23:10:27 by bsiche            #+#    #+#             */
-/*   Updated: 2019/05/02 04:21:27 by abguimba         ###   ########.fr       */
+/*   Updated: 2019/05/03 10:53:44 by bsiche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,4 +77,5 @@ void	init_shell(char **environ)
 	g_tracking.mysh->dup3 = 16;
 	g_tracking.quotes = 0;
 	replace_env_set_str("FCEDIT", "nano");
+	replace_env_set_str("kirby", ft_true_pwd());
 }
